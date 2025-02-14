@@ -81,11 +81,13 @@
         padding: 12px;
         text-align: left;
         border-bottom: 1px solid #ddd;
+        font-size: 10px;
     }
 
     th {
         background-color: #e74c3c;
         color: white;
+        
     }
 
     tr:nth-child(even) {
@@ -230,7 +232,7 @@ function calcularTotales() {
     const saldoNegativo = document.getElementById('saldoNegativo');
 
     if (diferenciaTotalAbsoluta > 0) {
-        const importe = diferenciaTotalAbsoluta * 165,3603408;
+        const importe = diferenciaTotalAbsoluta * 165.3603408;
         importeTotal.innerHTML = `Importe Total: ${importe.toFixed(2)}€`;
         importeTotal.style.display = 'block';
         saldoNegativo.style.display = 'none';
